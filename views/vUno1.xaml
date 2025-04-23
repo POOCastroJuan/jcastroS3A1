@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcastroS3A1.views.vUno1"
+             Title="vUno1">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+       
+        <Label 
+            Text="Inicio de Sesion"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="uisrael.jpg"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Usuario"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Ingrese el usuario"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+            <Label Text="Contraseña"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtContraseña"
+                   Placeholder="Ingrese el contraseña"
+                   IsPassword="True"
+                   Grid.Row="1"
+                    Grid.Column="1"/>
+
+        </Grid>
+        <Button x:Name="btnInicicarSesion"
+                Text="Iniciar sesion"
+                     Clicked="btnIniciarSesion_Clicked"/>
+        <Button x:Name="btnRegistrar"
+                Text="Registrar"
+                Clicked="btnRegistrar_Clicked"/>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
